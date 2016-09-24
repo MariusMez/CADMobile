@@ -1,0 +1,12 @@
+<div list="posts">
+    <div class="list card card-posts repeat-animation" ng-repeat="item in customPostsListCtrl.list">
+        <div ui-sref="public.customPosts.id({ id: item.id, slug: customPostsListCtrl.type})">
+            <div class="item item-text-wrap">
+            <div class="item item-image" ng-if="::item.featured_media != 0" wphc-img-background-cache="{{::item.better_featured_image.media_details.sizes.medium.source_url}}">
+                <div class="img-border"></div>
+                <h1 style="margin-top:75px; margin-bottom:10px; margin-left:10px; margin-right:10px; font-size:1.1em;" class="custom-item-title" ng-bind-html="::item.title.rendered | truncate: 50: '...': true"></h1>
+            </div>
+            <div class="item item-text-wrap" ng-if="::item.excerpt.rendered" ng-bind-html="::item.excerpt.rendered"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+"title": "Costa Azul Digital"
+
+"api":
+    "baseUrl": "http://costazuldigital.com/wp-json"
+    "timeout": 15000
+    "maxAttempt": 3
+
+"translation":
+    "displayed" : ["es", "en", "fr"]
+    "prefered": "es"
+        
+# CACHE
+"cache":
+    "img":
+        "localCacheFolder": "imgcache"
+        "useDataURI": false
+        "chromeQuota": 10485760
+        "usePersistentCache": true
+        "cacheClearSize": 0
+        "headers": {}
+        "skipURIencoding": false
+    "data":
+        "capacity": 100
+        "maxAge": 360000
+        "deleteOnExpire": "aggressive"
+        "recycleFreq": 1000
+        "cacheFlushInterval": null
+        "storageMode": "localStorage"
+
+# BOOKMARK PAGE
+"bookmark":
+    "cache":
+        "capacity": 10
+
+# POST PAGES
+"post":
+    "comments":
+        "enabled": true
+        "depth": 2
+        "per_page": 50
+    "cache":
+        "maxAge": 360000
+        "capacity": 10
+
+# SYNTAX HIGHLIGHTER FOR TECH BLOG
+"syntaxHighlighter":
+    "enabled": false
+    "classPrefix": "hljs-"
+    "tabReplace": "    "
+    "useBR": false
+    "languages": ["javascript", "html", "coffeescript", "html", "css", "scss", "json", "apache", "bash", "markdown", "less", "php", "apache", "typescript"]
+
+# TAXONOMIES
+"taxonomies":
+    "query":
+        "per_page": 10
+        "orderby": "count"
+        "order": "desc"
+    "cache":
+        "maxAge": 10800000
+
+# AUTHOR
+"authors":
+    "query":
+        "per_page": 10
+    "cache":
+        "capacity": 15
+        "maxAge": 10800000
+
+# PAGES PAGE
+"pages":
+    "query":
+        "per_page": 5
+        "filter[orderby]": "date"
+        "filter[order]": "desc"
+    "cache":
+        "capacity": 10
+        "maxAge": 10800000
+
+# SEARCH PAGE
+"search":
+    "query":
+        "per_page": 5
+        "filter[orderby]": "date"
+        "filter[order]": "desc"
+        "filter[post_status]": "publish"
+    "cache":
+        "capacity": 25
+        "maxAge": 360000
+
+# POSTS PAGE
+"posts":
+    "query":
+        "per_page": 5
+        "filter[orderby]": "date"
+        "filter[order]": "desc"
+        "filter[post_status]": "publish"
+    "cache":
+        "capacity": 25
+        "maxAge": 360000
+  
+# ANALYTICS (GOOGLE ANALYTICS)
+"analytics":
+    "enabled": true
+    "trackingId": "UA-45984258-1"
+    "userId": "45984258"
+    "virtualPageTracking": true
+
+# CORDOVA
+"cordova":
+    "nativeTransitions":
+        "enabled": false
+        "defaultOptions": null
+        "defaultTransition" : null
+        "defaultBackTransition" : null
+    "appRate":
+        "enabled": true
+        "language": "es"
+        "appName": "Costa Azul Digital"
+        "openStoreInApp": true
+        "usesUntilPrompt": 3
+        "promptForNewVersion": true
+        "useCustomRateDialog": ""
+        "iosURL": "1107263009"
+        "androidURL": "https://play.google.com/store/apps/details?id=com.costazuldigital"
+        "windowsURL": ""
+    "pushNotifications":
+        "enabled": true
+        "baseUrl": "http://costazuldigital.com/pnfw"
+        "android":
+            "senderID": "817819662481"
+        "ios":
+            "badge": true
+            "sound": true
+            "alert": true

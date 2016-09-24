@@ -1,0 +1,26 @@
+<div class="post padding">
+   
+   <div style="height: 300px;background-color: white;background-size: cover;background-repeat: no-repeat;background-position: center;" class="item item-image" ng-if="::customPostsItemCtrl.item.featured_media != 0" wphc-img-background-cache="{{::customPostsItemCtrl.item.better_featured_image.media_details.sizes.medium.source_url}}"></div>
+
+    <h1 style="line-height: 35px; margin: 15px 0;text-align: center; font-size:1.5em;" class="item-title item-title-without-image" ng-bind-html="::customPostsItemCtrl.item.title.rendered"></h1>
+    
+
+    <hr>
+
+<span style="text-align:left; color:#6D6D6D;" ng-if="::customPostsItemCtrl.item.date">{{customPostsItemCtrl.item.date | amDateFormat:'LL'}}
+
+ <a style="color:#6D6D6D;float:right;" href="#/public/authors/14">
+		por Xavi Z.
+        <i  class="icon ion-ios-arrow-right"></i>
+</a>    
+</span> 
+
+<br><br>
+    <div class="post-content" bind-and-compile-html="::(customPostsItemCtrl.item.content.rendered | prepLink | highlight)"></div>
+    <hr>
+    <section class="footer">
+        <a class="button button-positive button-open-browser" wphc-href href="{{::customPostsItemCtrl.item.link}}">
+            {{'post.openInBrowser' | translate}}
+        </a>
+    </section>
+</div>

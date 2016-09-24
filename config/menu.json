@@ -1,0 +1,98 @@
+[{
+    "type": "internal",
+    "trans": "menu.home",
+    "route": "public.posts",
+    "icon": "icon ion-home"
+}, {
+    "type": "separator",
+    "trans": "Categoria"
+}, 
+{
+    "type": "internal",
+    "trans": "Noticias",
+    "route": "public.taxonomies.slug({ term: 'category', slug: 'noticias', postType: 'post' })",
+    "icon": "icon ion-ios-paper"
+},
+{
+    "type": "folder",
+    "trans": "Descubre",
+    "icon": "icon ion-images",
+    "list": [{
+        "type": "internal",
+        "trans": "Destinos",
+        "route": "public.taxonomies.slug({ term: 'category', slug: 'destinos', postType: 'post' })",
+        "icon": "icon ion-map"
+    }, {
+        "type": "internal",
+        "trans": "Gastronomía",
+        "route": "public.taxonomies.slug({ term: 'category', slug: 'gastronomia', postType: 'post' })",
+        "icon": "icon ion-android-restaurant"
+    }, {
+        "type": "internal",
+        "trans": "Modo de vida",
+        "route": "public.taxonomies.slug({ term: 'category', slug: 'modo-de-vida', postType: 'post' })",
+        "icon": "icon ion-android-color-palette"
+    }]
+}, {
+        "type": "internal",
+        "trans": "Historias",
+        "route": "public.taxonomies.slug({ term: 'category', slug: 'historias', postType: 'post' })",
+        "icon": "icon ion-happy-outline"
+    }, {
+        "type": "internal",
+        "trans": "Empleo",
+        "route": "public.taxonomies.slug({ term: 'category', slug: 'empleo-costa-azul', postType: 'post' })",
+        "icon": "icon ion-briefcase"
+    },
+    {
+    "type": "internal",
+    "trans": "Mónaco Informativo",
+    "route": "public.customPosts({slug: 'monaco-informativo'})",
+    "icon": "icon ion-ios-paper"
+},
+{
+    "type": "folder",
+    "trans": "Festival de Cannes",
+    "icon": "icon ion-film-marker",
+    "list": [{
+        "type": "internal",
+        "trans": "Cannes 2016",
+        "route": "public.taxonomies.slug({ term: 'post_tag', slug: 'cannes-2016', postType: 'post' })",
+        "icon": "icon ion-android-film"
+    },
+    {
+        "type": "internal",
+        "trans": "Cannes 2015",
+        "route": "public.taxonomies.slug({ term: 'category', slug: 'cannes2015', postType: 'post' })",
+        "icon": "icon ion-android-film"
+    },{
+        "type": "internal",
+        "trans": "Cannes 2014",
+        "route": "public.taxonomies.slug({ term: 'category', slug: 'cannes2014', postType: 'post' })",
+        "icon": "icon ion-android-film"
+}]
+},{
+    "type": "separator",
+    "trans": "Otros"
+}, {
+    "type": "internal",
+    "trans": "menu.authors",
+    "route": "public.authors",
+    "icon": "icon ion-ios-people"
+}, {
+    "type": "internal",
+    "trans": "menu.bookmarks",
+    "route": "public.bookmarks",
+    "icon": "icon ion-android-favorite"
+},{
+    "type": "internal",
+    "trans": "about.title",
+    "route": "public.pages.id({ id: 1804 })",
+    "icon": "icon ion-leaf"
+}, {
+    "type": "internal",
+    "trans": "params.title",
+    "route": "public.params",
+    "icon": "icon ion-android-settings"
+}
+]
